@@ -24,6 +24,7 @@ const review=require("./routes/review.js");
 const userRouter=require("./routes/user.js");
 const user=require("./models/user.js");
 
+const isLoggedin=require("./middleware.js");
 
 const mongoose_url='mongodb://127.0.0.1:27017/wanderlust';
 
@@ -62,16 +63,16 @@ app.use(flash());
 
 app.use(passport.initialize());
 app.use(passport.session());
-passport.use(new LocalStrategy(user.authenticate));
-
-passport.serializeUser(user.serializeUser());
-passport.deserializeUser(user.deserializeUser());
+passport.use(new LocalStrategy(user.authenticate()));    //authenticate is a method in passport-local-mongoose  
+passport.serializeUser(user.serializeUser());     //serializeUser is a method in passport-local-mongoose
+passport.deserializeUser(user.deserializeUser());  //deserializeUser is a method in passport-local-mongoose
 
 
 app.use((req,res,next)=>{
     res.locals.success = req.flash("success");
     res.locals.error = req.flash("error");
     // console.log(res.locals.success);
+    res.locals.currUser=req.user;
     next();
 })
 
