@@ -1,0 +1,182 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">Find Your Perfect Stay</h1>
+        <p class="hero-subtitle">Discover unique homes, villas, and rooms across the globe. Your next adventure starts here.</p>
+        <form action="/listing" method="get" class="hero-search-form">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Search destinations, rooms..." class="search-input" name="q">
+                <button type="submit" class="search-btn">Explore</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="row text-center">
+        <div class="col-md-3 col-6 stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Unique Stays</div>
+        </div>
+        <div class="col-md-3 col-6 stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Countries</div>
+        </div>
+        <div class="col-md-3 col-6 stat-item">
+            <div class="stat-number">10K+</div>
+            <div class="stat-label">Happy Guests</div>
+        </div>
+        <div class="col-md-3 col-6 stat-item">
+            <div class="stat-number">4.8</div>
+            <div class="stat-label">Avg. Rating ⭐</div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Destinations -->
+<section class="featured-section">
+    <h2 class="section-title">Popular Destinations</h2>
+    <p class="section-subtitle">Handpicked stays loved by travelers around the world</p>
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
+        <div class="col">
+            <a href="/listing" class="dest-link">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?auto=format&fit=crop&w=600&q=60" alt="Malibu Beach">
+                    <div class="dest-overlay">
+                        <h5 class="dest-name">Malibu, USA</h5>
+                        <span class="dest-price">From ₹1,500/night</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="/listing" class="dest-link">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=60" alt="Tuscany Villa">
+                    <div class="dest-overlay">
+                        <h5 class="dest-name">Florence, Italy</h5>
+                        <span class="dest-price">From ₹2,500/night</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="/listing" class="dest-link">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=60" alt="Dubai Desert">
+                    <div class="dest-overlay">
+                        <h5 class="dest-name">Dubai, UAE</h5>
+                        <span class="dest-price">From ₹5,000/night</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="/listing" class="dest-link">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1480796927426-f609979314bd?auto=format&fit=crop&w=600&q=60" alt="Tokyo City">
+                    <div class="dest-overlay">
+                        <h5 class="dest-name">Tokyo, Japan</h5>
+                        <span class="dest-price">From ₹2,000/night</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-section">
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-subtitle">Book your dream stay in just 3 simple steps</p>
+    <div class="row g-4 mt-2">
+        <div class="col-md-4">
+            <div class="how-card">
+                <div class="how-icon">
+                    <i class="fa-solid fa-magnifying-glass-location"></i>
+                </div>
+                <h4>Search</h4>
+                <p>Browse hundreds of unique rooms, villas, and cottages across the globe.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="how-card">
+                <div class="how-icon">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <h4>Book</h4>
+                <p>Reserve your perfect stay instantly with our secure and easy booking system.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="how-card">
+                <div class="how-icon">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                </div>
+                <h4>Enjoy</h4>
+                <p>Arrive, unwind, and create unforgettable memories at your dream destination.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section">
+    <h2 class="section-title">What Our Guests Say</h2>
+    <p class="section-subtitle">Real experiences from real travelers</p>
+    <div class="row g-4 mt-2">
+        <div class="col-md-4">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"The beachfront cottage in Malibu was absolutely stunning! Waking up to ocean views every day was a dream come true."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">A</div>
+                    <div>
+                        <div class="author-name">Aarav Sharma</div>
+                        <div class="author-location">Mumbai, India</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"BookMyRoom made it so easy to find a cozy cabin in the mountains. The whole experience was seamless and incredible!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">S</div>
+                    <div>
+                        <div class="author-name">Sophia Chen</div>
+                        <div class="author-location">Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"We hosted our villa in Tuscany on BookMyRoom and got amazing guests. The platform is wonderful for both hosts and travelers."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">M</div>
+                    <div>
+                        <div class="author-name">Marco Rossi</div>
+                        <div class="author-location">Florence, Italy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Ready to List Your Property?</h2>
+        <p>Join thousands of hosts earning with BookMyRoom. Share your space with the world.</p>
+        <a href="/listing/new" class="cta-btn">Start Hosting</a>
+    </div>
+</section>
